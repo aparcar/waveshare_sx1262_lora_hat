@@ -1,0 +1,26 @@
+--cpu Cortex-M3
+"sx126x_transparent\startup_stm32f103xb.o"
+"sx126x_transparent\main.o"
+"sx126x_transparent\stm32f1xx_it.o"
+"sx126x_transparent\stm32f1xx_hal_msp.o"
+"sx126x_transparent\gpio.o"
+"sx126x_transparent\sx126x_lora_hat.o"
+"sx126x_transparent\usart.o"
+"sx126x_transparent\stm32f1xx_hal_gpio_ex.o"
+"sx126x_transparent\stm32f1xx_hal_tim.o"
+"sx126x_transparent\stm32f1xx_hal_tim_ex.o"
+"sx126x_transparent\stm32f1xx_hal_uart.o"
+"sx126x_transparent\stm32f1xx_hal.o"
+"sx126x_transparent\stm32f1xx_hal_rcc.o"
+"sx126x_transparent\stm32f1xx_hal_rcc_ex.o"
+"sx126x_transparent\stm32f1xx_hal_gpio.o"
+"sx126x_transparent\stm32f1xx_hal_dma.o"
+"sx126x_transparent\stm32f1xx_hal_cortex.o"
+"sx126x_transparent\stm32f1xx_hal_pwr.o"
+"sx126x_transparent\stm32f1xx_hal_flash.o"
+"sx126x_transparent\stm32f1xx_hal_flash_ex.o"
+"sx126x_transparent\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "SX126X_TRANSPARENT\SX126X_TRANSPARENT.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "SX126X_TRANSPARENT.map" -o SX126X_TRANSPARENT\SX126X_TRANSPARENT.axf
